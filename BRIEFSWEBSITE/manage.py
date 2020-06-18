@@ -3,8 +3,8 @@
 import os
 import sys
 
-
-#test change for github
+# another test comment
+# test change for github
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'BRIEFSWEBSITE.settings')
