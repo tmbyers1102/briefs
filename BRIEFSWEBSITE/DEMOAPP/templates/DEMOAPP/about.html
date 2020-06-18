@@ -1,0 +1,154 @@
+{% extends "DEMOAPP/base.html" %}
+{% block content %}
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1 px solid;
+  border-color: #FF5733;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #FF5733;
+}
+</style>
+
+    <div class="content-section">
+        <form action="add">
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Enter Web Link: </legend>
+                <input type="text" name="link"><br>
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Brief Me, Baby!</button>
+            </div>
+        </form>
+    </div>
+
+<div class='spinner-wrapper'>
+    <div class="spinner"></div>
+</div>
+
+{% endblock content %}
+
+<!--
+{% for post in posts %}
+        <article class="media content-section">
+            <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+            <h1><a class="article-title" href="#">{{ post.article_title}}</a></h1>
+            <p class="article-content">url:{{ post.site_url }}</p>
+              <h3 class="article-content">Term 1: <b>{{ post.word_1 }}</b></h3>
+            <p class="article-content">{{ post.word_1_def }}</p>
+              <h3 class="article-content">Term 2: <b>{{ post.word_2 }}</b></h3>
+            <p class="article-content">{{ post.word_2_def }}</p>
+              <h3 class="article-content">Term 3: <b>{{ post.word_3 }}</b></h3>
+            <p class="article-content">{{ post.word_3_def }}</p>
+          </div>
+        </article>
+    {% endfor %}
+-->
+
+<!--
+
+body, html {
+    height: 100%;
+    text-align: center;
+}
+
+body {
+  background-color: #242F3F;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #242f3f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+
+  25% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0%;
+  }
+}
+
+---------
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+      });
+</script>
+
+
+-->

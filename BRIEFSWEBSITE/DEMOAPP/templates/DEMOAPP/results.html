@@ -1,0 +1,21 @@
+{% extends "DEMOAPP/base.html" %}
+{% block content %}
+<article class ="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <small>Article Title:</small>
+            <h3>{{ article_title }}</h3>
+            <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{{ url }}" target="_blank">go to article</a>
+        </div>
+        <h5>Term 1: <span style="color: #ff5733">{{ term_1 }}</span></h5>
+        <p><b>Definition:</b> {{ term_1_def }}</p>
+        <h5>Term 2: <span style="color: #ff5733">{{ term_2 }}</span></h5>
+        <p><b>Definition:</b> {{ term_2_def }}</p>
+        <h5>Term 3: <span style="color: #ff5733">{{ term_3 }}</span></h5>
+        <p><b>Definition:</b> {{ term_3_def }}</p>
+    </div>
+</article>
+
+
+
+{% endblock content %}
