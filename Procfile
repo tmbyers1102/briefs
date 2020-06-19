@@ -1,1 +1,1 @@
-web: gunicorn briefs_project.wsgi
+web: gunicorn briefs_project/BRIEFSWEBSITE.wsgi
